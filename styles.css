@@ -8,40 +8,43 @@
 html {
   font-size: 62.5%;
 }
-:root{
-    --container-color:hsl(0, 0%, 100%);
-    --paragraph-color:hsl(216, 15%, 48%);
-    --header-color:hsl(218, 44%, 22%);
+:root {
+  --container-color: hsl(0, 0%, 100%);
+  --paragraph-color: hsl(216, 15%, 48%);
+  --header-color: hsl(218, 44%, 22%);
+  --body-background: hsl(212, 45%, 89%);
 }
-body{
-    min-height: 100vh;
-    display: flex;
-    background-color: hsl(212, 45%, 89%);
-    font-family: 'Outfit', sans-serif;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--body-background);
+  font-family: "Outfit", sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
 }
-.container{
-    max-width: clamp(100px, 90%, 300px);
-    background-color: var(--container-color);
-    padding: 1.2rem;
-    text-align: center;
-    border-radius: 1rem;
+.container {
+  max-width: clamp(10rem, 90%, 30rem);
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1.5rem;
 }
-#QR-image{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
+.qr-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
 }
-.container p{
-    color: var(--paragraph-color);
-    font-weight: 400;
-    padding: 0 1rem 2rem;
-    line-height: 2rem;
+.description {
+  color: var(--paragraph-color);
+  font-weight: 400;
+  padding: 0 1rem 2rem;
+  line-height: 2rem;
 }
-.container h2{
-    color: var(--header-color);
-    font-weight: 700;
-    padding-block: 2rem;
+.heading {
+  color: var(--header-color);
+  font-weight: 700;
+  padding-block: 2rem;
+  font-size: 2.1rem;
+  line-height: 2.7rem;
 }
