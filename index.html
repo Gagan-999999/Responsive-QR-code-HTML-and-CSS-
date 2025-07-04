@@ -11,53 +11,35 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit" />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
   </head>
-  <body class="display-flex">
-    <main>
-      <div class="container border-radius display-grid">
-        <picture>
-          <source
-            media="(max-width: 51.7rem)"
-            srcset="images/image-product-mobile.jpg"
-            class="image"
-          />
-          <source
-            media="(min-width: 51.71rem)"
-            srcset="images/image-product-desktop.jpg"
-            class="image"
-          />
-          <img src="default-image.jpg" alt="Responsive Image" class="image" />
-        </picture>
-        <div class="text display-grid">
-          <p class="perfume font-Montserrat color-gray">Perfume</p>
-          <h1 class="heading font-Fraunces font-700">
-            Gabrielle Essence Eau De Parfum
-          </h1>
-          <p class="details font-Montserrat color-gray">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <p class="price-container display-flex">
-            <span class="offered-price font-Fraunces color-green500"
-              >$149.99</span
-            >
-            <span class="price font-Montserrat color-gray font-500"
-              >$169.99</span
-            >
-          </p>
-          <button
-            id="button"
-            type="submit"
-            class="button font-700 border-radius display-flex"
-          >
-            <img src="images/icon-cart.svg" alt="shopping cart" /><span
-              class="font-Montserrat"
-              >Add to Cart</span
-            >
-          </button>
-        </div>
-      </div>
+  <body>
+    <main role="main" class="container">
+      <img
+        id="QR-image"
+        src="images/image-qr-code.png"
+        alt="QR code scanner"
+        loading="lazy"
+        class="qr-image"
+      />
+      <p class="heading">Improve your front-end skills by building projects</p>
+      <p class="description">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
     </main>
   </body>
 </html>
